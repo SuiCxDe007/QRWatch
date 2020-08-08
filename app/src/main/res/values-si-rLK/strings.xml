@@ -75,4 +75,10 @@
     <string name="errordesc">කරුණාකර මොහොතකින් නැවත උත්සාහ කරන්න.</string>
     <string name="sendreportt">වාර්තා ආකෘතිය</string>
     <string name="sendreportdescc">පහත ආකෘතියෙන් වාර්තාව සපයන ලද විද්‍යුත් තැපෑලට යවනු ලැබේ. කරුණාකර විද්‍යුත් තැපෑල ඇතුළත් කරන්න.</string>
+    <string name="addvehicle">ස්කෑන් කරන්න</string>
+    <string name="addvehidesc">QR කේතය පරිලෝකනය කරන්න</string>
+    <string name="viewvehicle">දැනුම්දීම්</string>
+    <string name="viewvehidesc">දැනුම්දීම් ලොගය බලන්න</string>
+    <string name="savefailed">සුරැකීම අසාර්ථකයි!</string>
+    <string name="savefaileddesc">දෝෂයක් සිදුවී ඇත. කරුණාකර නැවත උත්සාහ කරන්න!</string>
 </resources>

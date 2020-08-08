@@ -156,7 +156,6 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
                                         });
 
 
-
                             }
                         } else {
 
@@ -182,5 +181,12 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
         super.onResume();
         ScannerView.setResultHandler(this);
         ScannerView.startCamera();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent x = new Intent(this,DashboardActivity.class);
+        startActivity(x);
     }
 }

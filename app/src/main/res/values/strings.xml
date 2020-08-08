@@ -42,27 +42,17 @@
     <string name="emailsentdesc">Reset Your Password using the Link sent to your Email.</string>
     <string name="notregistered">Entered Email is not Registered with </string>
     <string name="addvehicle">Scan</string>
-    <string name="addvehidesc">Scan QR CODE</string>
-    <string name="viewvehicle">View Locations</string>
-    <string name="viewvehidesc">View Location Log</string>
+    <string name="addvehidesc">Scan QR Code</string>
+    <string name="viewvehicle">Notifications</string>
+    <string name="viewvehidesc">View Notifications Log</string>
 
     <string name="savefailed">Saving Failed!</string>
     <string name="savefaileddesc">Error Has Occured.Please Try Again!</string>
-    <string name="addnewvehicle">Add New Vehicle</string>
-    <string name="carname">Vehicle Name</string>
-    <string name="vehicleservice">Vehicle Service Info</string>
-    <string name="servicedate">Last Service Date</string>
-    <string name="nextservice">Next Service Due Date</string>
+
     <string name="date">Date</string>
-    <string name="engineoilinfo">Engine Oil Info</string>
-    <string name="lastengineoil">Last Engine Oil Change Date</string>
-    <string name="nextoilchange">Next Engine Oil Change Due Date</string>
-    <string name="oilfilter">Engine Oil Filter Info</string>
-    <string name="oilfilterx">Last Engine Oil Filter Change Date</string>
-    <string name="nextoilfilterx">Next Engine Oil Filter Due Date</string>
+
     <string name="save">Save</string>
-    <string name="vehicleviewdesc">Click On A Vehicle To View or Update Info</string>
-    <string name="updatevehicle">Update Vehicle Info</string>
+
     <string name="markasdone">Mark As Done</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
@@ -93,11 +83,7 @@
     <string name="servicevehip1">Your Vehicle</string>
     <string name="servicevehip2">is Required to Be Serviced. If you have already Serviced the Vehicle Please Update QRWatch.</string>
     <string name="novehicles">You Have not Added And Vehicles to QRWatch. Please Add Vehicles from Dashboard to Continue.</string>
-    <string name="airfilterinfo">Air Filter Info</string>
-    <string name="airfilterchange">Last Air Filter Changed Date</string>
-    <string name="airfilternet">Next Air Filter Change Due Date</string>
-    <string name="sendreport">Send Report</string>
-    <string name="reportsentdesc">Report Sent Successfully Via Email!</string>
+
     <string name="error">Error Occured!</string>
     <string name="errordesc">Please Try Again in  a Moment.</string>
     <string name="sendreportt">Maintainance Report Format</string>

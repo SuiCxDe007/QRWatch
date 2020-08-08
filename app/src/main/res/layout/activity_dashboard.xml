@@ -18,7 +18,7 @@
             android:id="@+id/collapsingtool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/ddxx"
+            android:background="@drawable/dashbg"
             app:contentScrim="?attr/colorPrimaryDark"
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
@@ -81,7 +81,7 @@
                             android:layout_height="64dp"
                             android:background="@drawable/cerclebackgroundpurple"
                             android:padding="10dp"
-                            android:src="@drawable/ic_add_img" />
+                            android:src="@drawable/scan" />
 
                         <TextView
                             android:layout_width="wrap_content"

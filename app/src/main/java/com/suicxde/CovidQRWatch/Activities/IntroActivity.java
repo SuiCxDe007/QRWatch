@@ -64,9 +64,9 @@ public class IntroActivity extends AppCompatActivity {
 
         final List<ScreenItem> mList = new ArrayList<>();
 
-        mList.add(new ScreenItem("Welcome to Covid QRWatch!", "QRWatch will help CDC & Health Personnel Track & Contain any Pandemic including Covid-19", R.drawable.icon));
+        mList.add(new ScreenItem("Welcome to Savior!", "Savior will help Health Promotion Bureau  & Health Personnel Track & Contain any Pandemic!", R.drawable.icon));
         mList.add(new ScreenItem("We will Protect You!", "We will warn you about new Hot Zones, Dangerous Areas & Critical Alerts about the current pandemic", R.drawable.ddxx));
-        mList.add(new ScreenItem("Let's Work Together!", "We will Do our best to keep you uninfected & protected from the pandemic!  \nLet us take care of your safety! ", R.drawable.finalpic));
+        mList.add(new ScreenItem("Help us Help You!", "We will Do our best to keep you uninfected & protected from the pandemic!  \nLet us take care of your safety! ", R.drawable.finalpic));
 
         screenPager = findViewById(R.id.screen_viewpager);
         introViewPagerAdapter = new IntroViewPagerAdapter(this, mList);
