@@ -38,7 +38,8 @@ public class CameraActivity extends AppCompatActivity {
         setContentView(R.layout.activity_camera);
         camerabtn = findViewById(R.id.camerabtn);
         cameratex = findViewById(R.id.camratext);
-
+        String sessionId = getIntent().getStringExtra("EXTRA_SESSION_ID");
+        cameratex.setText(sessionId);
         camerabtn.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override

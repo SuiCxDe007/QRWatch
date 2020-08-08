@@ -105,7 +105,7 @@ import br.com.simplepass.loading_button_lib.customViews.CircularProgressButton;
 
             FirebaseUser user = mAuth.getCurrentUser();
             if ((user != null) && user.isEmailVerified()) {
-               Intent x = new Intent(this,DashboardActivity.class);
+               Intent x = new Intent(this,OpenCameraActivty.class);
                startActivity(x);
                finish();
             }
