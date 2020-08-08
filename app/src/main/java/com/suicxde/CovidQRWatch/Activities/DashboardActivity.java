@@ -133,6 +133,9 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
             startActivity(profilex);
 
         } else if (id == R.id.mapscard_res) {
+            Intent profilex = new Intent(this, NotificationActivity.class);
+
+            startActivity(profilex);
 
 
         } else if (id == R.id.profilecard_res) {

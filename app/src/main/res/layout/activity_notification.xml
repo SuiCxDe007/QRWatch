@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profileAccentColor"
+    android:orientation="vertical"
+    tools:context=".Activities.NotificationActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+             android:background="@drawable/bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:textSize="24dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="අද දැනුම්දීම "></TextView>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:24PM "></TextView></LinearLayout>
+    <TextView
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="අද (09) දිනය තුළ දී කොරෝනා ආසාදිතයින් 23දෙනෙක් පූර්ණ සුවය ලබා ඇතැයි සෞඛ්‍ය අමාත්‍යාංශය පවසයි."></TextView>
+
+</LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bg2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:textSize="24dp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="විශේෂ දැනුම්දීම "></TextView>
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="14dp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="07:24AM "></TextView></LinearLayout>
+                    <TextView
+                        android:textSize="14dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ලංකාපුර සිවිල් ආරක්‍ෂක භටයෙකුටත් කොරෝනා.කන්දකාඩුව මත්ද්‍රව්‍යවලට ඇබ්බැහිවූවන්ගේ පුනරුත්ථාපන කඳවුරෙන් කොරෝනා පොකුරු හමුවීමෙන් පසුව ලංකාපුර ප්‍රාදේශීය ප්‍රාදේශීය ලේකම් කොට්ඨාසයෙන් පමණක් මේ වනවිට කොරෝනා රෝගීන් 11 දෙනෙක"></TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bg3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:textSize="24dp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ආසාදිතයින් 2823 "></TextView>
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="14dp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08:31AM "></TextView></LinearLayout>
+                    <TextView
+                        android:textSize="14dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="මෙරට කොවිඩ් ආසාදිතයින් සංඛ්‍යාව 2823 දක්වා ඉහළ ගොස් තිබෙනවා.
+ඒ, තවත් නව ආසාදිතයෙක් හඳුනා ගැනීමත් සමඟයි.
+තවත් කොරෝනා ආසාදිතයන් 05 දෙනෙකු ඊයේ (8) රාත්‍රී ද වාර්තා වුණා."></TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/bg4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:textSize="24dp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WHO දැනුම්දීම "></TextView>
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+
+                            android:textSize="18dp"
+                            android:textColor="#fff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09:54PM "></TextView></LinearLayout>
+                    <TextView
+                        android:textSize="14dp"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="කොරෝනා වෛරසයෙන් සිදු වූ බලපෑම දශක ගණනාවක් යනතෙක් දැනෙනු ඇතැයි ලෝක සෞඛ්‍ය සංවිධානය (WHO ) පවසයි.
+ඒ, වෛරස් ව්‍යාප්තිය ඇරඹී මාස 6 ක් ගත වූ පසුබිමකදීය.
+
+ශතවර්ෂයකට වරක් හටගන්නා මෙවැනි වසංගත තත්ත්වයක බලපෑම දීර්ඝ කාලයක් බලපවත්වනු ඇතැයි ද ලෝක සෞඛ්‍ය සංවිධානයේ ප්‍රධානියා අවධාරණය කළේ ය."></TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
