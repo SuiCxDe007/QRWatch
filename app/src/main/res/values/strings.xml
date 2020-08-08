@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CovidQR Watch</string>
+    <string name="app_name">Savior</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
 
@@ -19,7 +19,7 @@
 
     <string name="required">Required!</string>
     <string name="collection_users" translatable="false">Users</string>
-    <string name="registerwithus">Register \nWith QRWatch </string>
+    <string name="registerwithus">Register \nWith Savior </string>
     <string name="registerbut">Register</string>
     <string name="alreadyhave">Already Have an Account?</string>
 
@@ -36,7 +36,7 @@
     <string name="regsuccessdesc">Please Check your Email to Verify Your Account!</string>
     <string name="wait">Please Wait</string>
     <string name="fogotpassword">Recover Password</string>
-    <string name="recoverpassword">Please Enter Your Email Associated with QRWatch to Send the Password Reset Confirmation Email</string>
+    <string name="recoverpassword">Please Enter Your Email Associated with Savior to Send the Password Reset Confirmation Email</string>
     <string name="resetpasswordbut">Reset Password</string>
     <string name="emailsent">Email Sent!</string>
     <string name="emailsentdesc">Reset Your Password using the Link sent to your Email.</string>
@@ -81,11 +81,12 @@
     <string name="logout">Logout</string>
     <string name="logoutdesc">See You Later!</string>
     <string name="servicevehip1">Your Vehicle</string>
-    <string name="servicevehip2">is Required to Be Serviced. If you have already Serviced the Vehicle Please Update QRWatch.</string>
-    <string name="novehicles">You Have not Added And Vehicles to QRWatch. Please Add Vehicles from Dashboard to Continue.</string>
+    <string name="servicevehip2">is Required to Be Serviced. If you have already Serviced the Vehicle Please Update Savior.</string>
+    <string name="novehicles">You Have not Added And Vehicles to Savior. Please Add Vehicles from Dashboard to Continue.</string>
 
     <string name="error">Error Occured!</string>
     <string name="errordesc">Please Try Again in  a Moment.</string>
     <string name="sendreportt">Maintainance Report Format</string>
     <string name="sendreportdescc">Maintainance Report Will be sent to Provided Email in the Following Format.Please Enter the Email when Requested.</string>
+    <string name="address">"Address "</string>
 </resources>

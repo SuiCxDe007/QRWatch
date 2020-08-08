@@ -10,21 +10,15 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.util.Log;
-import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.GeoPoint;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.zxing.Result;
@@ -61,8 +55,7 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
                 .withListener(new PermissionListener() {
                     @Override
                     public void onPermissionGranted(PermissionGrantedResponse response) {
-                        Toast.makeText(OpenCameraActivty.this, "dead", Toast.LENGTH_SHORT).show();
-                        //startActivity(new Intent(getApplicationContext(),OpenCameraActivty.class));
+
 
                 }
 
@@ -70,7 +63,7 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
                         if (response.isPermanentlyDenied()) {
                             showSettingsDialog();
                         }
-                        Toast.makeText(OpenCameraActivty.this, "denied", Toast.LENGTH_SHORT).show();
+
                     }
 
                     private void showSettingsDialog() {
@@ -106,7 +99,7 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
 
 
                     @Override public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                        Toast.makeText(OpenCameraActivty.this, "need", Toast.LENGTH_SHORT).show();
+
                         token.continuePermissionRequest();
                     }
                 }).check();
@@ -118,8 +111,6 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
 
     @Override
     public void handleResult(final Result result) {
-      //  CameraActivity.cameratex.setText(result.getText());
-      //  onBackPressed();
 
         mDb.collection("Users")
                 .whereEqualTo("email", currentUser.getEmail())
@@ -145,13 +136,13 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
                                 mDb.collection(result.getText()).add(city).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                     @Override
                                     public void onSuccess(DocumentReference documentReference) {
-                                        Toast.makeText(OpenCameraActivty.this, "ggez", Toast.LENGTH_SHORT).show();
+
                                     }
                                 })
                                         .addOnFailureListener(new OnFailureListener() {
                                             @Override
                                             public void onFailure(@NonNull Exception e) {
-                                                Toast.makeText(OpenCameraActivty.this, "FAUED Ez", Toast.LENGTH_SHORT).show();
+
                                             }
                                         });
 
@@ -163,9 +154,6 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
                     }
                 });
 
-        Intent intent = new Intent(getBaseContext(), CameraActivity.class);
-        intent.putExtra("EXTRA_SESSION_ID", result.getText());
-        startActivity(intent);
 
 
     }

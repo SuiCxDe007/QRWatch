@@ -41,10 +41,10 @@ import static com.google.firebase.auth.FirebaseAuth.getInstance;
 public class ProfileActivity extends AppCompatActivity implements DialogModel.dlglistner, DialogModelName.dlglistner1 , DialogModelEmail.dlglistner2 , DialogModelTP.dlglistner3 {
 
     private static final String TAG = "ProfileActivity";
-    private TextView nameuser, useremail, usertp;
+    private TextView nameuser, useremail, usertp,hhh;
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
-    private String fname, ftp;
+    private String fname, ftp,had;
     private Button delaccbutton,langbutton,backbutton,changepass;
     private FirebaseFirestore mDb;
     @Override
@@ -59,6 +59,7 @@ public class ProfileActivity extends AppCompatActivity implements DialogModel.dl
         RelativeLayout nameupdate = (RelativeLayout) findViewById(R.id.updatename);
         RelativeLayout emailupdate = (RelativeLayout) findViewById(R.id.emaillayout);
         RelativeLayout tpupdate = (RelativeLayout) findViewById(R.id.tpupdate);
+
         delaccbutton = (Button) findViewById(R.id.testbtn);
         langbutton = (Button) findViewById(R.id.langbutton);
         backbutton = (Button) findViewById(R.id.backbtn);
@@ -66,6 +67,7 @@ public class ProfileActivity extends AppCompatActivity implements DialogModel.dl
         nameuser = findViewById(R.id.firename);
         usertp = findViewById(R.id.firetp);
         useremail = findViewById(R.id.fireemail);
+        hhh = findViewById(R.id.homeadrez);
 
         langbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -198,9 +200,12 @@ public class ProfileActivity extends AppCompatActivity implements DialogModel.dl
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         fname = document.getString("nameuser");
                         ftp = document.getString("usertp");
+                        had = document.getString("address");
+
                         usertp.setText(ftp);
                         useremail.setText(currentUser.getEmail());
                         nameuser.setText(fname);
+                        hhh.setText(had);
                     }
                 } else {
                     alertDialogx.dismiss();

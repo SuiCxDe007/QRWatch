@@ -43,7 +43,7 @@ import dmax.dialog.SpotsDialog;
 
 public class RegisterActivity extends AppCompatActivity {
     private static final String TAG = "EmailPassword";
-    EditText name,emailx,passwordx,confimPassword,mobile;
+    EditText name,emailx,passwordx,confimPassword,mobile,address;
     Button alreadyhave;
     private FirebaseAuth mAuth;
     private FirebaseFirestore mDb;
@@ -65,6 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
         passwordx = findViewById(R.id.password);
         confimPassword = findViewById(R.id.confirmpass);
         mobile = findViewById(R.id.mobile);
+        address = findViewById(R.id.adress);
         register = findViewById(R.id.registerbutton);
         database = FirebaseDatabase.getInstance();
         ref = database.getReference().child("User");
@@ -81,10 +82,12 @@ public class RegisterActivity extends AppCompatActivity {
                 String password2 = confimPassword.getText().toString();
                 final String uname = name.getText().toString();
                 final String usertel = mobile.getText().toString();
+                final String adres = address.getText().toString();
 
                 userx.setEmail(email);
                 userx.setUsertp(usertel);
                 userx.setNameuser(uname);
+                userx.setAddress(adres);
 
                 if (validateForm() && checkPassword()) {
                     register.startAnimation();
@@ -135,6 +138,20 @@ public class RegisterActivity extends AppCompatActivity {
         else {
             mobile.setError(null);
         }
+
+
+
+        String add = address.getText().toString();
+        if (TextUtils.isEmpty(add)) {
+            address.setError(getText(R.string.required));
+            valid = false;
+        }
+
+        else {
+            address.setError(null);
+        }
+
+
 
         String password = passwordx.getText().toString();
         if (TextUtils.isEmpty(password)) {
@@ -245,9 +262,11 @@ public class RegisterActivity extends AppCompatActivity {
                             user.setUser_id(FirebaseAuth.getInstance().getUid());
                             final String x = mobile.getText().toString();
                             final String y = name.getText().toString();
+                            final String z = address.getText().toString();
 
                             user.setUsertp(x);
                             user.setNameuser(y);
+                            user.setAddress(z);
 
                             FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
                                     .setTimestampsInSnapshotsEnabled(true)
@@ -286,6 +305,7 @@ public class RegisterActivity extends AppCompatActivity {
                                                             ((EditText) findViewById(R.id.mobile)).getText().clear();
                                                             ((EditText) findViewById(R.id.password)).getText().clear();
                                                             ((EditText) findViewById(R.id.confirmpass)).getText().clear();
+                                                            ((EditText) findViewById(R.id.adress)).getText().clear();
                                                         }else{
                                                             alertDialogx.dismiss();
                                                             register.revertAnimation();

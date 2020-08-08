@@ -128,8 +128,8 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         int id = view.getId();
 
         if (id == R.id.soscard_res) {
-            Intent profilex = new Intent(this, CameraActivity.class);
-            Toast.makeText(this, "DEA", Toast.LENGTH_SHORT).show();
+            Intent profilex = new Intent(this, OpenCameraActivty.class);
+
             startActivity(profilex);
 
         } else if (id == R.id.mapscard_res) {
