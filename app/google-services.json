@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "143534061307",
+    "firebase_url": "https://qrwatch-aa5a5.firebaseio.com",
+    "project_id": "qrwatch-aa5a5",
+    "storage_bucket": "qrwatch-aa5a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143534061307:android:49e071f329bb678af8225e",
+        "android_client_info": {
+          "package_name": "com.suicxde.CovidQRWatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143534061307-vqf5qk12d3eg3he9l3h7te21fdi2vghb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs8FjcjzIZ0tYiVoh8bxpp0O43w4BdlBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143534061307-vqf5qk12d3eg3he9l3h7te21fdi2vghb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
