@@ -89,4 +89,6 @@
     <string name="sendreportt">Maintainance Report Format</string>
     <string name="sendreportdescc">Maintainance Report Will be sent to Provided Email in the Following Format.Please Enter the Email when Requested.</string>
     <string name="address">"Address "</string>
+    <string name="scansucc">Scan Successfull!</string>
+    <string name="scansuccdesc">Your location has been traced successfully!</string>
 </resources>

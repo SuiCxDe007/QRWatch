@@ -82,4 +82,6 @@
     <string name="savefailed">සුරැකීම අසාර්ථකයි!</string>
     <string name="savefaileddesc">දෝෂයක් සිදුවී ඇත. කරුණාකර නැවත උත්සාහ කරන්න!</string>
     <string name="address">ලිපිනය</string>
+    <string name="scansucc">Scan Successfull!</string>
+    <string name="scansuccdesc">Your location has been traced successfully!</string>
 </resources>

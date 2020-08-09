@@ -10,6 +10,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.widget.EditText;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -137,6 +139,7 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
                                     @Override
                                     public void onSuccess(DocumentReference documentReference) {
 
+
                                     }
                                 })
                                         .addOnFailureListener(new OnFailureListener() {
@@ -155,7 +158,18 @@ public class OpenCameraActivty extends AppCompatActivity implements ZXingScanner
                 });
 
 
+        new android.app.AlertDialog.Builder(OpenCameraActivty.this)
+                .setTitle(R.string.scansucc).setMessage(R.string.scansuccdesc).setIcon(R.drawable.qrscaned)
+                .setNegativeButton(R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
 
+                        finish();
+
+                    }
+                })
+                .create()
+                .show();
     }
 
     @Override
